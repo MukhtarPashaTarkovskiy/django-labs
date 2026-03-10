@@ -16,8 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from flatpages.views import home
 from flatpages.views import home, static_page
+
 
 urlpatterns = [
     path('', home, name='home'),
@@ -25,5 +25,4 @@ urlpatterns = [
     path('page/', static_page, name='static_page'),
     path('admin/', admin.site.urls),
 ]
-
 
