@@ -46,27 +46,5 @@ function filterByGroup(students, group) {
     return result;
 }
 
-// Фильтрация по группе
-function filterByGroup(students, group) {
-    var result = [];
-    for (var i = 0; i < students.length; i++) {
-        if (students[i].group === group) {
-            result.push(students[i]);
-        }
-    }
-    return result;
-}
-
-// Фильтрация по группе
-function filterByGroup(students, group) {
-    var result = [];
-    for (var i = 0; i < students.length; i++) {
-        if (students[i].group === group) {
-            result.push(students[i]);
-        }
-    }
-    return result;
-}
-
 // Печать только студентов группы 912-2
 printStudents(filterByGroup(groupmates, "912-2"));

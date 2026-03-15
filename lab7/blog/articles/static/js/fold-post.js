@@ -10,6 +10,7 @@ for (var i = 0; i < foldBtns.length; i++) {
             onePost.classList.remove("folded");
             event.target.textContent = "свернуть";
         } else {
+
             onePost.classList.add("folded");
             event.target.textContent = "развернуть";
         }

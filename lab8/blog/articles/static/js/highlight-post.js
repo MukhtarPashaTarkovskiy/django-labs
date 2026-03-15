@@ -21,9 +21,9 @@ $(document).ready(function () {
     var $logo = $('.header img');
 
     function initLogoHover() {
-        var w0 = parseInt($logo.css('width')) || 60;
-        var h0 = parseInt($logo.css('height')) || 60;
-        var ratio = h0 / w0;
+    var w0 = $logo.width();
+    var h0 = $logo.height();
+    var ratio = h0 / w0;
 
         $('.header').hover(
             function () {

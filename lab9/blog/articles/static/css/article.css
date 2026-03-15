@@ -3,18 +3,31 @@ body {
 }
 
 body.archive-page {
-  background: #ffffff;
+  background: #efefef;
   color: #0e6050;
-}
-
-body.article {
-  background: #1abc9c;
-  color: #ffffff;
 }
 
 .page {
   width: 600px;
   margin: 40px auto;
+}
+
+.header {
+  position: relative;
+  overflow: hidden;
+  min-height: 360px;
+  background: #cfe9e4;
+  padding: 18px 22px;
+}
+
+.archive {
+  background: #a9ddd3;
+  padding: 14px 0;
+}
+
+body.article {
+  background: #1abc9c;
+  color: #ffffff;
 }
 
 .clearfix {
@@ -43,7 +56,6 @@ body.article {
   color: rgba(14, 96, 80, 0.85);
   overflow: hidden;
   padding-right: 90px;
-  /* место под кнопку */
 }
 
 .article-author {
@@ -83,13 +95,6 @@ body.article {
 }
 
 /* ===== LAB9 Header ===== */
-.header {
-  position: relative;
-  overflow: hidden;
-  min-height: 360px;
-  background: #cfe9e4;
-  padding: 18px 22px;
-}
 
 .header .logo {
   display: block;
@@ -120,42 +125,35 @@ body.article {
   text-decoration: underline;
 }
 
-/* ===== LAB9 Parallax icons ===== */
 .icons-for-parallax {
   float: right;
   width: 280px;
-  margin-top: 20px;
-  margin-bottom: 20px;
   height: 300px;
   position: relative;
 }
 
 .icons-for-parallax img {
   position: absolute;
-  top: 0;
   will-change: transform;
 }
 
 .icon-for-parallax-first {
   width: 200px;
-  margin-top: 140px;
+  top: 140px;
+  left: 0;
   z-index: 3;
 }
 
 .icon-for-parallax-second {
   width: 175px;
-  margin-top: 70px;
-  margin-left: 60px;
+  top: 70px;
+  left: 60px;
   z-index: 2;
 }
 
 .icon-for-parallax-third {
   width: 150px;
-  margin-left: 120px;
+  top: 0;
+  left: 120px;
   z-index: 1;
-}
-
-.archive {
-  background: #b3e2d9;
-  padding: 10px 0;
 }
