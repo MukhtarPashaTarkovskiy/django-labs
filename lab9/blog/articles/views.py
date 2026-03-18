@@ -58,7 +58,8 @@ def login_user(request):
             user = authenticate(username=form["username"], password=form["password"])
             if user is not None and user.is_active:
                 login(request, user)
-                return redirect("archive")
+                # return redirect("archive")
+                return redirect('create_post')
             else:
                 form["errors"] = "Неверный логин или пароль"
         else:
@@ -88,7 +89,8 @@ def register_user(request):
 
             user = User.objects.create_user(form['username'], form['email'], form['password'])
             login(request, user)
-            return redirect('archive')
+            # return redirect('archive')
+            return redirect('create_post')
         else:
             form['errors'] = "Не все поля заполнены"
             return render(request, 'register.html', {'form': form})

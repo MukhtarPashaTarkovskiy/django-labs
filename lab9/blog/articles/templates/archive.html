@@ -13,11 +13,23 @@
     <div class="header">
       <img class="logo" src="{% static 'img/dpb-logo.png' %}" alt="Django public blog" />
 
-      <div class="header-text-area">
+      <!-- <div class="header-text-area">
         <p class="service-title">Коллективный блог</p>
         <a href="{% url 'register' %}" class="register-link">Регистрация</a>
         <a href="{% url 'login' %}" class="register-link">Вход</a>
-      </div>
+      </div> -->
+
+      <div class="header-text-area">
+  <p class="service-title">Коллективный блог</p>
+
+  <a href="{% url 'register' %}" class="register-link">Регистрация</a>
+  <a href="{% url 'login' %}" class="register-link">Вход</a>
+
+  {% if not request.user.is_anonymous %}
+    <a href="{% url 'create_post' %}" class="register-link">Создать статью</a>
+    <a href="{% url 'logout' %}" class="register-link">Выход</a>
+  {% endif %}
+</div>
 
       <div class="icons-for-parallax">
         <img class="icon-for-parallax-first" src="{% static 'img/article-icon-for-parallax.png' %}">
