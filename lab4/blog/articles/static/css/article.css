@@ -1,0 +1,34 @@
+body {
+  background: #1abc9c;
+  font-family: Tahoma, Arial, sans-serif;
+  color: white;
+}
+
+.header img {
+  display: block;
+  /* height: 60px;
+  width: 60px; */
+  margin: 0 auto;
+}
+
+.archive, .content {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.post-title a {
+  color: white;
+  text-decoration: none;
+}
+
+.article-author { width: 50%; float: left; }
+.article-created-date { text-align: right; }
+
+.all-posts {
+  float: right;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+

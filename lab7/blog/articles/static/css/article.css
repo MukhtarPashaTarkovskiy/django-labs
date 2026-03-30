@@ -1,0 +1,76 @@
+body {
+  background: #1abc9c;
+  font-family: Tahoma, Arial, sans-serif;
+  color: white;
+}
+
+.header img {
+  display: block;
+  height: 60px;
+  width: 60px;
+  margin: 0 auto;
+}
+
+.archive,
+.content {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* На странице одной статьи заголовок обычно <h1 class="post-title">, а в архиве ссылка <a> */
+.post-title a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Ссылка-заголовок в архиве (у тебя .one-post > a) */
+.one-post > a {
+  display: block;
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 8px;
+}
+
+/* Каждый пост */
+.one-post {
+  padding-bottom: 14px;
+  margin-bottom: 10px;
+}
+
+/* Автор + дата в одну строку, без float */
+.article-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article-author {
+  width: auto;
+  float: none;
+}
+
+.article-created-date {
+  text-align: right;
+}
+
+/* Кнопка справа, без float */
+.fold-button {
+  display: inline-block;
+  margin-top: 8px;
+  margin-left: auto;
+}
+
+
+/* Ссылка "Все статьи" на странице статьи */
+.all-posts {
+  float: right;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Сворачивание (класс folded добавляется на .one-post) */
+.one-post.folded .article-author { display: none; }
+.one-post.folded .article-created-date { display: none; }
+.one-post.folded .article-text { display: none; }
